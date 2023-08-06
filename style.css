@@ -1,0 +1,23 @@
+.meet-us::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+.text-card:hover .meet-us::before {
+    transform: scaleX(1);
+}
+
+.text-card:hover svg {
+    fill: black;
+    background-color: white;
+    border-color: black;
+}
+

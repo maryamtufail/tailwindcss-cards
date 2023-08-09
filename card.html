@@ -1,36 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <title>Tailwind CSS Card</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body class=" bg-black gap-5 h-screen flex md:flex-row flex-col items-center justify-center uppercase">
-    <!-- text-card -->
-    <div class="text-card bg-black border border-white text-white max-w-sm px-6 py-3 rounded-lg shadow-lg">
-        <h1 class="text-7xl font-bold mb-36">1</h1>
-        <h2 class="text-lg font-semibold mb-5">About ME</h2>
-        <p class="text-sm mb-6">This is a testing paragraph. From learning to earning journey with frontendfirst. Follow me for more. Be Happy!</p>
-        <div class="relative items-center flex justify-between  mb-5">
-            <span class="text-sm mr-2 meet-us relative">Meet me</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 rounded border border-white p-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body
+    class="bg-black gap-5 flex md:flex-row flex-col items-center justify-center uppercase py-24"
+  >
+    <!--social-icons-card -->
+    <div
+      class="bg-black border-2 border-white text-white max-w-sm px-6 py-3 rounded-lg shadow-lg hover:border-blue-400"
+    >
+      <div class="relative overflow-hidden rounded-lg">
+        <img class="rounded-lg w-full h-68 mb-3" src="./assets/me.jpg" alt="" />
+        <div
+          class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"
+        ></div>
+      </div>
+      <div class="flex justify-between items-center mb-5">
+        <h2 class="text-lg font-semibold">About ME</h2>
+        <div class="flex justify-center items-center gap-1">
+          <a class="bg-white rounded-full px-2 py-2 hover:bg-blue-400" href=""
+            ><img
+              class="w-5 h-5"
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD
+              0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiMwMDAwMDAiIGZpbGwtcn
+              VsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdG
+              VyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIi
+              Bmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiP
+              jxnIHRyYW5zZm9ybT0ic2NhbGUoOC41MzMzMyw4LjUzMzMzKSI+PHBhdGggZD0iTTksMjVoLTV2LTE1aDV6TTYuNTAxLDhjLTEuMzgzLDAgLTIuNTAxL
+              C0xLjEyMSAtMi41MDEsLTIuNTAxYzAsLTEuMzggMS4xMiwtMi40OTkgMi41MDEsLTIuNDk5YzEuMzc4LDAgMi40OTksMS4xMjEgMi40OTksMi40OTlj
+              MCwxLjM4IC0xLjEyMSwyLjUwMSAtMi40OTksMi41MDF6TTI3LDI1aC00LjgwN3YtNy4zYzAsLTEuNzQxIC0wLjAzMywtMy45OCAtMi40OTksLTMuOTh
+              jLTIuNTAzLDAgLTIuODg4LDEuODk2IC0yLjg4OCwzLjg1NHY3LjQyNmgtNC44MDZ2LTE1LjAxMWg0LjYxNHYyLjA1MWgwLjA2NWMwLjY0MiwtMS4xOC
+              AyLjIxMSwtMi40MjQgNC41NTEsLTIuNDI0YzQuODcsMCA1Ljc3LDMuMTA5IDUuNzcsNy4xNTFjMCwwIDAsOC4yMzMgMCw4LjIzM3oiPjwvcGF0aD48L2
+              c+PC9nPgo8L3N2Zz4="
+          /></a>
+          <a class="bg-white rounded-full px-2 py-2 hover:bg-blue-400" href=""
+            ><img
+              class="w-5 h-5"
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CiAgICA8cGF0aCBkPSJNMTUsM0M4LjM3MywzLDMsOC4zNzMsMywxNWMwLDYuMDE2LDQuNDMyLDEwLjk4NCwxMC4yMDYsMTEuODUyVjE4LjE4aC0yLjk2OXYtMy4xNTRoMi45Njl2LTIuMDk5YzAtMy40NzUsMS42OTMtNSw0LjU4MS01IGMxLjM4MywwLDIuMTE1LDAuMTAzLDIuNDYxLDAuMTQ5djIuNzUzaC0xLjk3Yy0xLjIyNiwwLTEuNjU0LDEuMTYzLTEuNjU0LDIuNDczdjEuNzI0aDMuNTkzTDE5LjczLDE4LjE4aC0zLjEwNnY4LjY5NyBDMjIuNDgxLDI2LjA4MywyNywyMS4wNzUsMjcsMTVDMjcsOC4zNzMsMjEuNjI3LDMsMTUsM3oiPjwvcGF0aD4KPC9zdmc+"
+          /></a>
+          <a class="bg-white rounded-full px-2 py-2 hover:bg-blue-400" href=""
+            ><img
+              class="w-5 h-5"
+              alt="svgImg"
+              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGQ9Ik0gMTYuNSA1IEMgMTAuMTU5IDUgNSAxMC4xNTkgNSAxNi41IEwgNSAzMS41IEMgNSAzNy44NDEgMTAuMTU5IDQzIDE2LjUgNDMgTCAzMS41IDQzIEMgMzcuODQxIDQzIDQzIDM3Ljg0MSA0MyAzMS41IEwgNDMgMTYuNSBDIDQzIDEwLjE1OSAzNy44NDEgNSAzMS41IDUgTCAxNi41IDUgeiBNIDM0IDEyIEMgMzUuMTA1IDEyIDM2IDEyLjg5NSAzNiAxNCBDIDM2IDE1LjEwNCAzNS4xMDUgMTYgMzQgMTYgQyAzMi44OTUgMTYgMzIgMTUuMTA0IDMyIDE0IEMgMzIgMTIuODk1IDMyLjg5NSAxMiAzNCAxMiB6IE0gMjQgMTQgQyAyOS41MTQgMTQgMzQgMTguNDg2IDM0IDI0IEMgMzQgMjkuNTE0IDI5LjUxNCAzNCAyNCAzNCBDIDE4LjQ4NiAzNCAxNCAyOS41MTQgMTQgMjQgQyAxNCAxOC40ODYgMTguNDg2IDE0IDI0IDE0IHogTSAyNCAxNyBBIDcgNyAwIDEgMCAyNCAzMSBBIDcgNyAwIDEgMCAyNCAxNyB6Ij48L3BhdGg+Cjwvc3ZnPg=="
+          /></a>
         </div>
+      </div>
+      <p class="text-sm mb-4">
+        This is a testing paragraph. From learning to earning journey with
+        frontendfirst. Follow me for more. I like make more projects for you.
+        Coding is an art that everyone loves. Be Happy!
+      </p>
     </div>
-    <!-- image-card -->
-    <div class=" text-card image-card bg-black border border-white text-white max-w-sm px-6 py-3 rounded-lg shadow-lg">
-        <h1 class="text-7xl font-bold mb-36">2</h1>
-        <h2 class="text-lg font-semibold mb-5">About ME</h2>
-        <p class="text-sm mb-6">This is a testing paragraph. From learning to earning journey with frontendfirst. Follow me for more. Be Happy!</p>
-        <div class="relative items-center flex justify-between mb-5">
-            <span class="text-sm mr-2 meet-us relative">Meet me</span>
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 rounded border border-white p-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-        </div>
-    </div>
-</body>
+  
+  </body>
 </html>

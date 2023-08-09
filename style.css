@@ -25,16 +25,9 @@
 .image-card {
     position: relative;
     overflow: hidden;
-    background-image: url('./bird.png');
+    background-image: url('./assets/bird.png');
     background-size: 170%; 
     background-position: center; 
     background-repeat: no-repeat;
     transition: background-size 0.3s;
 }
-
-.image-card:hover {
-    background-size: 200%;
-}
-
-
-  

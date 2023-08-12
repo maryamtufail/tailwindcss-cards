@@ -11,133 +11,263 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body
-    class="bg-black gap-5 flex md:flex-row flex-col items-center justify-center uppercase py-24"
+    class="gap-5 flex flex-wrap md:flex-row flex-col  justify-center uppercase py-24 px-4"
   >
-    <!-- text-card -->
-    <div
-      class="text-card bg-black border border-white text-white max-w-sm px-6 py-3 rounded-lg shadow-lg"
-    >
-      <h1 class="text-7xl font-bold mb-36">1</h1>
-      <h2 class="text-lg font-semibold mb-5">About ME</h2>
-      <p class="text-sm mb-6">
-        This is a testing paragraph. From learning to earning journey with
-        frontendfirst. Follow me for more. Be Happy!
-      </p>
-      <div class="relative items-center flex justify-between mb-5">
-        <span class="text-sm mr-2 meet-us relative">Meet me</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-9 w-9 rounded border border-white p-2"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M9 5l7 7-7 7"
-          ></path>
-        </svg>
-      </div>
-    </div>
-    <!-- image-card -->
-    <div
-      class="text-card image-card bg-black border border-white text-white max-w-sm px-6 py-3 rounded-lg shadow-lg"
-    >
-      <h1 class="text-7xl font-bold mb-36">2</h1>
-      <h2 class="text-lg font-semibold mb-5">About ME</h2>
-      <p class="text-sm mb-6">
-        This is a testing paragraph. From learning to earning journey with
-        frontendfirst. Follow me for more. Be Happy!
-      </p>
-      <div class="relative items-center flex justify-between mb-5">
-        <span class="text-sm mr-2 meet-us relative">Meet me</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-9 w-9 rounded border border-white p-2"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M9 5l7 7-7 7"
-          ></path>
-        </svg>
-      </div>
-    </div>
-    <!--social-icons-card -->
-    <div
-      class="bg-black border-2 border-white text-white max-w-sm px-6 py-3 rounded-lg shadow-lg hover:border-blue-400"
-    >
-    <div class="relative overflow-hidden rounded-lg">
-        <img
-          class="rounded-lg w-full h-68 mb-3"
-          src="./assets/me.jpg"
-          alt=""
-        />
-        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
-      </div>
-      <div class="flex justify-between items-center mb-5">
-        <h2 class="text-lg font-semibold">About ME</h2>
-        <div class="flex justify-center items-center gap-1">
-          <a class="bg-white rounded-full px-2 py-2 hover:bg-blue-400" href=""
-            ><img
-              class="w-5 h-5"
-              alt="svgImg"
-              src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoOC41MzMzMyw4LjUzMzMzKSI+PHBhdGggZD0iTTksMjVoLTV2LTE1aDV6TTYuNTAxLDhjLTEuMzgzLDAgLTIuNTAxLC0xLjEyMSAtMi41MDEsLTIuNTAxYzAsLTEuMzggMS4xMiwtMi40OTkgMi41MDEsLTIuNDk5YzEuMzc4LDAgMi40OTksMS4xMjEgMi40OTksMi40OTljMCwxLjM4IC0xLjEyMSwyLjUwMSAtMi40OTksMi41MDF6TTI3LDI1aC00LjgwN3YtNy4zYzAsLTEuNzQxIC0wLjAzMywtMy45OCAtMi40OTksLTMuOThjLTIuNTAzLDAgLTIuODg4LDEuODk2IC0yLjg4OCwzLjg1NHY3LjQyNmgtNC44MDZ2LTE1LjAxMWg0LjYxNHYyLjA1MWgwLjA2NWMwLjY0MiwtMS4xOCAyLjIxMSwtMi40MjQgNC41NTEsLTIuNDI0YzQuODcsMCA1Ljc3LDMuMTA5IDUuNzcsNy4xNTFjMCwwIDAsOC4yMzMgMCw4LjIzM3oiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4=" /></a
-          >
-          <a class="bg-white rounded-full px-2 py-2 hover:bg-blue-400" href=""
-          ><img
-            class="w-5 h-5"
-            alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CiAgICA8cGF0aCBkPSJNMTUsM0M4LjM3MywzLDMsOC4zNzMsMywxNWMwLDYuMDE2LDQuNDMyLDEwLjk4NCwxMC4yMDYsMTEuODUyVjE4LjE4aC0yLjk2OXYtMy4xNTRoMi45Njl2LTIuMDk5YzAtMy40NzUsMS42OTMtNSw0LjU4MS01IGMxLjM4MywwLDIuMTE1LDAuMTAzLDIuNDYxLDAuMTQ5djIuNzUzaC0xLjk3Yy0xLjIyNiwwLTEuNjU0LDEuMTYzLTEuNjU0LDIuNDczdjEuNzI0aDMuNTkzTDE5LjczLDE4LjE4aC0zLjEwNnY4LjY5NyBDMjIuNDgxLDI2LjA4MywyNywyMS4wNzUsMjcsMTVDMjcsOC4zNzMsMjEuNjI3LDMsMTUsM3oiPjwvcGF0aD4KPC9zdmc+" /></a
-        >
-        <a class="bg-white rounded-full px-2 py-2 hover:bg-blue-400" href=""
-        ><img
-          class="w-5 h-5"
-          alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGQ9Ik0gMTYuNSA1IEMgMTAuMTU5IDUgNSAxMC4xNTkgNSAxNi41IEwgNSAzMS41IEMgNSAzNy44NDEgMTAuMTU5IDQzIDE2LjUgNDMgTCAzMS41IDQzIEMgMzcuODQxIDQzIDQzIDM3Ljg0MSA0MyAzMS41IEwgNDMgMTYuNSBDIDQzIDEwLjE1OSAzNy44NDEgNSAzMS41IDUgTCAxNi41IDUgeiBNIDM0IDEyIEMgMzUuMTA1IDEyIDM2IDEyLjg5NSAzNiAxNCBDIDM2IDE1LjEwNCAzNS4xMDUgMTYgMzQgMTYgQyAzMi44OTUgMTYgMzIgMTUuMTA0IDMyIDE0IEMgMzIgMTIuODk1IDMyLjg5NSAxMiAzNCAxMiB6IE0gMjQgMTQgQyAyOS41MTQgMTQgMzQgMTguNDg2IDM0IDI0IEMgMzQgMjkuNTE0IDI5LjUxNCAzNCAyNCAzNCBDIDE4LjQ4NiAzNCAxNCAyOS41MTQgMTQgMjQgQyAxNCAxOC40ODYgMTguNDg2IDE0IDI0IDE0IHogTSAyNCAxNyBBIDcgNyAwIDEgMCAyNCAzMSBBIDcgNyAwIDEgMCAyNCAxNyB6Ij48L3BhdGg+Cjwvc3ZnPg=="/></a
-      >
+     <!-- Start text-card -->
+     <article
+     class="text-card bg-black border border-white text-white max-w-sm px-6 py-3 rounded-lg shadow-lg"
+   >
+     <h1 class="text-7xl font-bold mb-36">1</h1>
+     <h2 class="text-lg font-semibold mb-5">About ME</h2>
+     <p class="text-sm mb-6">
+       This is a testing paragraph. From learning to earning journey with
+       frontendfirst. Follow me for more. Be Happy!
+     </p>
+     <div class="relative items-center flex justify-between mb-5">
+       <span class="text-sm mr-2 meet-us relative">Meet me</span>
+       <svg
+         xmlns="http://www.w3.org/2000/svg"
+         class="h-9 w-9 rounded border border-white p-2"
+         fill="none"
+         viewBox="0 0 24 24"
+         stroke="currentColor"
+       >
+         <path
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="2"
+           d="M9 5l7 7-7 7"
+         ></path>
+       </svg>
+     </div>
+   </article>
+   <!-- End Text Card -->
+   <!--Start image-card -->
+   <article
+     class="text-card image-card bg-black border border-white text-white max-w-sm px-6 py-3 rounded-lg shadow-lg"
+   >
+     <h1 class="text-7xl font-bold mb-36">2</h1>
+     <h2 class="text-lg font-semibold mb-5">About ME</h2>
+     <p class="text-sm mb-6">
+       This is a testing paragraph. From learning to earning journey with
+       frontendfirst. Follow me for more. Be Happy!
+     </p>
+     <div class="relative items-center flex justify-between mb-5">
+       <span class="text-sm mr-2 meet-us relative">Meet me</span>
+       <svg
+         xmlns="http://www.w3.org/2000/svg"
+         class="h-9 w-9 rounded border border-white p-2"
+         fill="none"
+         viewBox="0 0 24 24"
+         stroke="currentColor"
+       >
+         <path
+           stroke-linecap="round"
+           stroke-linejoin="round"
+           stroke-width="2"
+           d="M9 5l7 7-7 7"
+         ></path>
+       </svg>
+     </div>
+   </article>
+   <!-- End Image Card -->
+   <!--Start social-icons-card -->
+   <article
+     class="bg-black border-2 border-white text-white max-w-sm px-6 py-3 rounded-lg shadow-lg hover:border-blue-400"
+   >
+   <div class="relative overflow-hidden rounded-lg">
+       <img
+         class="rounded-lg w-full h-68 mb-3"
+         src="./assets/me.jpg"
+         alt=""
+       />
+       <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
+     </div>
+     <div class="flex justify-between items-center mb-5">
+       <h2 class="text-lg font-semibold">About ME</h2>
+       <div class="flex justify-center items-center gap-1">
+         <a class="bg-white rounded-full px-2 py-2 hover:bg-blue-400" href=""
+           ><img
+             class="w-5 h-5"
+             alt="svgImg"
+             src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoOC41MzMzMyw4LjUzMzMzKSI+PHBhdGggZD0iTTksMjVoLTV2LTE1aDV6TTYuNTAxLDhjLTEuMzgzLDAgLTIuNTAxLC0xLjEyMSAtMi41MDEsLTIuNTAxYzAsLTEuMzggMS4xMiwtMi40OTkgMi41MDEsLTIuNDk5YzEuMzc4LDAgMi40OTksMS4xMjEgMi40OTksMi40OTljMCwxLjM4IC0xLjEyMSwyLjUwMSAtMi40OTksMi41MDF6TTI3LDI1aC00LjgwN3YtNy4zYzAsLTEuNzQxIC0wLjAzMywtMy45OCAtMi40OTksLTMuOThjLTIuNTAzLDAgLTIuODg4LDEuODk2IC0yLjg4OCwzLjg1NHY3LjQyNmgtNC44MDZ2LTE1LjAxMWg0LjYxNHYyLjA1MWgwLjA2NWMwLjY0MiwtMS4xOCAyLjIxMSwtMi40MjQgNC41NTEsLTIuNDI0YzQuODcsMCA1Ljc3LDMuMTA5IDUuNzcsNy4xNTFjMCwwIDAsOC4yMzMgMCw4LjIzM3oiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4=" /></a
+         >
+         <a class="bg-white rounded-full px-2 py-2 hover:bg-blue-400" href=""
+         ><img
+           class="w-5 h-5"
+           alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CiAgICA8cGF0aCBkPSJNMTUsM0M4LjM3MywzLDMsOC4zNzMsMywxNWMwLDYuMDE2LDQuNDMyLDEwLjk4NCwxMC4yMDYsMTEuODUyVjE4LjE4aC0yLjk2OXYtMy4xNTRoMi45Njl2LTIuMDk5YzAtMy40NzUsMS42OTMtNSw0LjU4MS01IGMxLjM4MywwLDIuMTE1LDAuMTAzLDIuNDYxLDAuMTQ5djIuNzUzaC0xLjk3Yy0xLjIyNiwwLTEuNjU0LDEuMTYzLTEuNjU0LDIuNDczdjEuNzI0aDMuNTkzTDE5LjczLDE4LjE4aC0zLjEwNnY4LjY5NyBDMjIuNDgxLDI2LjA4MywyNywyMS4wNzUsMjcsMTVDMjcsOC4zNzMsMjEuNjI3LDMsMTUsM3oiPjwvcGF0aD4KPC9zdmc+" /></a
+       >
+       <a class="bg-white rounded-full px-2 py-2 hover:bg-blue-400" href=""
+       ><img
+         class="w-5 h-5"
+         alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGQ9Ik0gMTYuNSA1IEMgMTAuMTU5IDUgNSAxMC4xNTkgNSAxNi41IEwgNSAzMS41IEMgNSAzNy44NDEgMTAuMTU5IDQzIDE2LjUgNDMgTCAzMS41IDQzIEMgMzcuODQxIDQzIDQzIDM3Ljg0MSA0MyAzMS41IEwgNDMgMTYuNSBDIDQzIDEwLjE1OSAzNy44NDEgNSAzMS41IDUgTCAxNi41IDUgeiBNIDM0IDEyIEMgMzUuMTA1IDEyIDM2IDEyLjg5NSAzNiAxNCBDIDM2IDE1LjEwNCAzNS4xMDUgMTYgMzQgMTYgQyAzMi44OTUgMTYgMzIgMTUuMTA0IDMyIDE0IEMgMzIgMTIuODk1IDMyLjg5NSAxMiAzNCAxMiB6IE0gMjQgMTQgQyAyOS41MTQgMTQgMzQgMTguNDg2IDM0IDI0IEMgMzQgMjkuNTE0IDI5LjUxNCAzNCAyNCAzNCBDIDE4LjQ4NiAzNCAxNCAyOS41MTQgMTQgMjQgQyAxNCAxOC40ODYgMTguNDg2IDE0IDI0IDE0IHogTSAyNCAxNyBBIDcgNyAwIDEgMCAyNCAzMSBBIDcgNyAwIDEgMCAyNCAxNyB6Ij48L3BhdGg+Cjwvc3ZnPg=="/></a
+     >
+       </div>
+     </div>
+     <p class="text-sm mb-4">
+       This is a testing paragraph. From learning to earning journey with
+       frontendfirst. Follow me for more. I like make more projects for you. Coding is an art that everyone loves. Be Happy!
+     </p>
+   </article>
+       <!--End social-icons-card -->
+     <!--Start side-image-with-social-icons -->
+     <article class="max-w-md py-4 px-8 bg-black border-white border shadow-lg rounded-lg my-20 text-white hover:border-blue-400">
+       <div class="flex justify-center md:justify-end -mt-16">
+         <img class="w-20 h-20 object-cover rounded-full border-2 hover:border-blue-400" src="./assets//me.jpg">
+       </div>
+       <div>
+         <h2 class="text-3xl font-semibold">About me</h2>
+         <p class="mt-2">This is a testing paragraph. From learning to earning journey with
+           frontendfirst. Follow me for more. I like make more projects for you. Coding is an art that everyone loves. Be Happy!</p>
+       </div>
+       <div class="flex justify-between items-center mt-4">
+         <a href="#" class="text-xl font-medium hover:text-blue-400">Mary Dev</a>
+         <div class="flex justify-center items-center gap-1">
+           <a class="rounded-full px-2 py-2 bg-white  hover:bg-blue-400" href=""
+             ><img
+               class="w-5 h-5"
+               alt="svgImg"
+               src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoOC41MzMzMyw4LjUzMzMzKSI+PHBhdGggZD0iTTksMjVoLTV2LTE1aDV6TTYuNTAxLDhjLTEuMzgzLDAgLTIuNTAxLC0xLjEyMSAtMi41MDEsLTIuNTAxYzAsLTEuMzggMS4xMiwtMi40OTkgMi41MDEsLTIuNDk5YzEuMzc4LDAgMi40OTksMS4xMjEgMi40OTksMi40OTljMCwxLjM4IC0xLjEyMSwyLjUwMSAtMi40OTksMi41MDF6TTI3LDI1aC00LjgwN3YtNy4zYzAsLTEuNzQxIC0wLjAzMywtMy45OCAtMi40OTksLTMuOThjLTIuNTAzLDAgLTIuODg4LDEuODk2IC0yLjg4OCwzLjg1NHY3LjQyNmgtNC44MDZ2LTE1LjAxMWg0LjYxNHYyLjA1MWgwLjA2NWMwLjY0MiwtMS4xOCAyLjIxMSwtMi40MjQgNC41NTEsLTIuNDI0YzQuODcsMCA1Ljc3LDMuMTA5IDUuNzcsNy4xNTFjMCwwIDAsOC4yMzMgMCw4LjIzM3oiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4=" /></a
+           >
+           <a class="rounded-full px-2 py-2 bg-white hover:bg-blue-400" href=""
+           ><img
+             class="w-5 h-5"
+             alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CiAgICA8cGF0aCBkPSJNMTUsM0M4LjM3MywzLDMsOC4zNzMsMywxNWMwLDYuMDE2LDQuNDMyLDEwLjk4NCwxMC4yMDYsMTEuODUyVjE4LjE4aC0yLjk2OXYtMy4xNTRoMi45Njl2LTIuMDk5YzAtMy40NzUsMS42OTMtNSw0LjU4MS01IGMxLjM4MywwLDIuMTE1LDAuMTAzLDIuNDYxLDAuMTQ5djIuNzUzaC0xLjk3Yy0xLjIyNiwwLTEuNjU0LDEuMTYzLTEuNjU0LDIuNDczdjEuNzI0aDMuNTkzTDE5LjczLDE4LjE4aC0zLjEwNnY4LjY5NyBDMjIuNDgxLDI2LjA4MywyNywyMS4wNzUsMjcsMTVDMjcsOC4zNzMsMjEuNjI3LDMsMTUsM3oiPjwvcGF0aD4KPC9zdmc+" /></a
+         >
+         <a class="rounded-full px-2 py-2 bg-white  hover:bg-blue-400" href=""
+         ><img
+           class="w-5 h-5"
+           alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGQ9Ik0gMTYuNSA1IEMgMTAuMTU5IDUgNSAxMC4xNTkgNSAxNi41IEwgNSAzMS41IEMgNSAzNy44NDEgMTAuMTU5IDQzIDE2LjUgNDMgTCAzMS41IDQzIEMgMzcuODQxIDQzIDQzIDM3Ljg0MSA0MyAzMS41IEwgNDMgMTYuNSBDIDQzIDEwLjE1OSAzNy44NDEgNSAzMS41IDUgTCAxNi41IDUgeiBNIDM0IDEyIEMgMzUuMTA1IDEyIDM2IDEyLjg5NSAzNiAxNCBDIDM2IDE1LjEwNCAzNS4xMDUgMTYgMzQgMTYgQyAzMi44OTUgMTYgMzIgMTUuMTA0IDMyIDE0IEMgMzIgMTIuODk1IDMyLjg5NSAxMiAzNCAxMiB6IE0gMjQgMTQgQyAyOS41MTQgMTQgMzQgMTguNDg2IDM0IDI0IEMgMzQgMjkuNTE0IDI5LjUxNCAzNCAyNCAzNCBDIDE4LjQ4NiAzNCAxNCAyOS41MTQgMTQgMjQgQyAxNCAxOC40ODYgMTguNDg2IDE0IDI0IDE0IHogTSAyNCAxNyBBIDcgNyAwIDEgMCAyNCAzMSBBIDcgNyAwIDEgMCAyNCAxNyB6Ij48L3BhdGg+Cjwvc3ZnPg=="/></a
+       >
+         </div>
+       </div>
+     </article>
+  <!--End side-image-with-social-icons -->
+ 
+            <!--Start Social Media Card-->
+      <article class="border border-black mb-4 break-inside rounded-xl bg-white dark:bg-slate-800 flex flex-col bg-clip-border">
+        <div class="flex p-6 items-center justify-between">
+          <div class="flex">
+            <a class="inline-block mr-4" href="#">
+              <img class="rounded-full max-w-none w-14 h-14" src="./assets/me.jpg" />
+            </a>
+            <div class="flex flex-col">
+              <div class="flex items-center">
+                <a class="inline-block text-lg font-bold mr-2" href="#">Mary Sam</a>
+                <span class="text-slate-500 dark:text-slate-300">3 minutes ago</span>
+              </div>
+              <div class="text-slate-500 dark:text-slate-300">
+                Frontend Developer
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <p class="text-sm mb-4">
-        This is a testing paragraph. From learning to earning journey with
-        frontendfirst. Follow me for more. I like make more projects for you. Coding is an art that everyone loves. Be Happy!
-      </p>
-    </div>
-      <!-- side-image-with-social-icons -->
-      <div class="max-w-md py-4 px-8 bg-black border-white border shadow-lg rounded-lg my-20 text-white hover:border-blue-400">
-        <div class="flex justify-center md:justify-end -mt-16">
-          <img class="w-20 h-20 object-cover rounded-full border-2 hover:border-blue-400" src="./assets//me.jpg">
+        <div class="p-6 bg-red-700">
+          <h2 class="text-3xl font-extrabold text-white">
+            Web Design templates Selection
+          </h2>
         </div>
-        <div>
-          <h2 class="text-3xl font-semibold">About me</h2>
-          <p class="mt-2">This is a testing paragraph. From learning to earning journey with
-            frontendfirst. Follow me for more. I like make more projects for you. Coding is an art that everyone loves. Be Happy!</p>
+        <div class="p-6">
+          <div class="flex justify-between items-center">
+            <a class="inline-flex items-center" href="#">
+              <span class="-m-1 rounded-full border-2 border-white dark:border-slate-800">
+                <img class="w-6" src="https://cdn.iconscout.com/icon/free/png-256/like-2387659-1991059.png" />
+              </span>
+              <span class="-m-1 rounded-full border-2 border-white dark:border-slate-800">
+                <img class="w-6" src="https://cdn.iconscout.com/icon/free/png-256/love-2387666-1991064.png" />
+              </span>
+              <span class="-m-1 rounded-full border-2 border-white dark:border-slate-800">
+                <img class="w-6" src="https://cdn.iconscout.com/icon/free/png-256/haha-2387660-1991060.png" />
+              </span>
+              <span class="text-lg font-bold ml-3">237</span>
+            </a>
+            <a class="ml-auto" href="#">23 comments</a>
+          </div>
+          <div class="mt-6 mb-6 h-px bg-slate-200"></div>
+          <div class="flex items-center justify-between mb-6">
+            <button class="py-2 px-4 font-medium hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg">
+              Like
+            </button>
+            <button class="py-2 px-4 font-medium hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg">
+              Comment
+            </button>
+            <button class="py-2 px-4 font-medium hover:bg-slate-50 dark:hover:bg-slate-700 rounded-lg">
+             Share
+            </button>
+          </div>
+          <div class="relative">
+            <input
+              class="pt-2 pb-2 pl-3 w-full h-11 bg-slate-100 dark:bg-slate-600 rounded-lg placeholder:text-slate-600 dark:placeholder:text-slate-300 font-medium pr-20"
+              type="text" placeholder="Write a comment" />
+            <span class="flex absolute right-3 top-2/4 -mt-3 items-center">
+              <svg class="mr-2" style="width: 26px; height: 26px;" viewBox="0 0 24 24">
+                <path fill="currentColor"
+                  d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z">
+                </path>
+              </svg>
+              <svg class="fill-blue-500 dark:fill-slate-50" style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+                <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"></path>
+              </svg>
+            </span>
+          </div>
         </div>
-        <div class="flex justify-between items-center mt-4">
-          <a href="#" class="text-xl font-medium hover:text-blue-400">Mary Dev</a>
-          <div class="flex justify-center items-center gap-1">
-            <a class="rounded-full px-2 py-2 bg-white  hover:bg-blue-400" href=""
-              ><img
-                class="w-5 h-5"
-                alt="svgImg"
-                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAsMCwyNTYsMjU2IgpzdHlsZT0iZmlsbDojMDAwMDAwOyI+CjxnIGZpbGw9IiMwMDAwMDAiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxnIHRyYW5zZm9ybT0ic2NhbGUoOC41MzMzMyw4LjUzMzMzKSI+PHBhdGggZD0iTTksMjVoLTV2LTE1aDV6TTYuNTAxLDhjLTEuMzgzLDAgLTIuNTAxLC0xLjEyMSAtMi41MDEsLTIuNTAxYzAsLTEuMzggMS4xMiwtMi40OTkgMi41MDEsLTIuNDk5YzEuMzc4LDAgMi40OTksMS4xMjEgMi40OTksMi40OTljMCwxLjM4IC0xLjEyMSwyLjUwMSAtMi40OTksMi41MDF6TTI3LDI1aC00LjgwN3YtNy4zYzAsLTEuNzQxIC0wLjAzMywtMy45OCAtMi40OTksLTMuOThjLTIuNTAzLDAgLTIuODg4LDEuODk2IC0yLjg4OCwzLjg1NHY3LjQyNmgtNC44MDZ2LTE1LjAxMWg0LjYxNHYyLjA1MWgwLjA2NWMwLjY0MiwtMS4xOCAyLjIxMSwtMi40MjQgNC41NTEsLTIuNDI0YzQuODcsMCA1Ljc3LDMuMTA5IDUuNzcsNy4xNTFjMCwwIDAsOC4yMzMgMCw4LjIzM3oiPjwvcGF0aD48L2c+PC9nPgo8L3N2Zz4=" /></a
-            >
-            <a class="rounded-full px-2 py-2 bg-white hover:bg-blue-400" href=""
-            ><img
-              class="w-5 h-5"
-              alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCI+CiAgICA8cGF0aCBkPSJNMTUsM0M4LjM3MywzLDMsOC4zNzMsMywxNWMwLDYuMDE2LDQuNDMyLDEwLjk4NCwxMC4yMDYsMTEuODUyVjE4LjE4aC0yLjk2OXYtMy4xNTRoMi45Njl2LTIuMDk5YzAtMy40NzUsMS42OTMtNSw0LjU4MS01IGMxLjM4MywwLDIuMTE1LDAuMTAzLDIuNDYxLDAuMTQ5djIuNzUzaC0xLjk3Yy0xLjIyNiwwLTEuNjU0LDEuMTYzLTEuNjU0LDIuNDczdjEuNzI0aDMuNTkzTDE5LjczLDE4LjE4aC0zLjEwNnY4LjY5NyBDMjIuNDgxLDI2LjA4MywyNywyMS4wNzUsMjcsMTVDMjcsOC4zNzMsMjEuNjI3LDMsMTUsM3oiPjwvcGF0aD4KPC9zdmc+" /></a
-          >
-          <a class="rounded-full px-2 py-2 bg-white  hover:bg-blue-400" href=""
-          ><img
-            class="w-5 h-5"
-            alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGQ9Ik0gMTYuNSA1IEMgMTAuMTU5IDUgNSAxMC4xNTkgNSAxNi41IEwgNSAzMS41IEMgNSAzNy44NDEgMTAuMTU5IDQzIDE2LjUgNDMgTCAzMS41IDQzIEMgMzcuODQxIDQzIDQzIDM3Ljg0MSA0MyAzMS41IEwgNDMgMTYuNSBDIDQzIDEwLjE1OSAzNy44NDEgNSAzMS41IDUgTCAxNi41IDUgeiBNIDM0IDEyIEMgMzUuMTA1IDEyIDM2IDEyLjg5NSAzNiAxNCBDIDM2IDE1LjEwNCAzNS4xMDUgMTYgMzQgMTYgQyAzMi44OTUgMTYgMzIgMTUuMTA0IDMyIDE0IEMgMzIgMTIuODk1IDMyLjg5NSAxMiAzNCAxMiB6IE0gMjQgMTQgQyAyOS41MTQgMTQgMzQgMTguNDg2IDM0IDI0IEMgMzQgMjkuNTE0IDI5LjUxNCAzNCAyNCAzNCBDIDE4LjQ4NiAzNCAxNCAyOS41MTQgMTQgMjQgQyAxNCAxOC40ODYgMTguNDg2IDE0IDI0IDE0IHogTSAyNCAxNyBBIDcgNyAwIDEgMCAyNCAzMSBBIDcgNyAwIDEgMCAyNCAxNyB6Ij48L3BhdGg+Cjwvc3ZnPg=="/></a
-        >
+      </article>
+      <!-- End Social Media Card -->
+     <!--Start Social-Card-2 -->
+     <article class="border border-black max-w-xl break-inside p-6 rounded-xl bg-white dark:bg-slate-800 flex flex-col bg-clip-border">
+      <div class="flex pb-6 items-center justify-between">
+        <div class="flex">
+          <a class="inline-block mr-4" href="#">
+            <img class="rounded-full max-w-none w-14 h-14" src="./assets/me.jpg" />
+          </a>
+          <div class="flex flex-col">
+            <div class="flex items-center">
+              <a class="inline-block text-lg font-bold mr-2" href="#">Mary Sam</a>
+            </div>
+            <div class="text-slate-500 dark:text-slate-300">
+              January 22, 2021
+            </div>
           </div>
         </div>
       </div>
+      <h2 class="text-3xl font-extrabold">
+        Web Design templates Selection
+      </h2>
+      <div class="py-4">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="py-4">
+        <a class="inline-flex items-center" href="#">
+          <span class="mr-2">
+            <svg class="fill-rose-600 dark:fill-rose-400" style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+              <path
+                d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z">
+              </path>
+            </svg>
+          </span>
+          <span class="text-lg font-bold">15</span>
+        </a>
+      </div>
+      <div class="relative">
+        <input
+          class="pt-2 pb-2 pl-3 w-full h-11 bg-slate-100 dark:bg-slate-600 rounded-lg placeholder:text-slate-600 dark:placeholder:text-slate-300 font-medium pr-20"
+          type="text" placeholder="Write a comment" />
+        <span class="flex absolute right-3 top-2/4 -mt-3 items-center">
+          <svg class="mr-2" style="width: 26px; height: 26px;" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8C16.3,8 17,8.7 17,9.5M12,17.23C10.25,17.23 8.71,16.5 7.81,15.42L9.23,14C9.68,14.72 10.75,15.23 12,15.23C13.25,15.23 14.32,14.72 14.77,14L16.19,15.42C15.29,16.5 13.75,17.23 12,17.23Z">
+            </path>
+          </svg>
+          <svg class="fill-blue-500 dark:fill-slate-50" style="width: 24px; height: 24px;" viewBox="0 0 24 24">
+            <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"></path>
+          </svg>
+        </span>
+      </div>
+    </article>
+    <!-- End Social-Card-2 -->
+
   </body>
 </html>
